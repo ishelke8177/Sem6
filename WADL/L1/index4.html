@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="tbl">
+        <thead>
+        <tr>
+          <th>College</th>
+          <th>DOE</th>
+        </tr>
+    </thead>
+        <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+    </tbody>
+      </table>
+</body>
+<script>
+    function display() {
+        var abc = new XMLHttpRequest();
+        abc.open("get", "data.json");
+
+        abc.onload = function () {
+
+        var value = JSON.parse(abc.responseText);
+
+        var table = document.getElementById("tbl");  
+
+            // document.getElementById("abc").innerHTML = value[0].name
+            // document.getElementById("def").innerHTML = value[0].doe
+            console.log(value);
+            for (let x in value) {
+              
+                var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = x[name];
+                cell2.innerHTML = x.doe;
+
+            }
+        }
+        abc.send();
+    }
+    
+    display()
+</script>
+</html>
