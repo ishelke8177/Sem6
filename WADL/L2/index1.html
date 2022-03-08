@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("p").hide()
+            $("h1").click(function() {
+                if ($(this).text() == "-") $(this).text("+");
+                else $(this).text("-");
+                $(this).next().toggle(500);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <section class="quiz">
+
+        <div class="question">
+            <div class="ques">
+                <h3 style="display: inline-block; padding-left: 4px;">Q) Who is the Prime Minister of India ?</h3>
+                <h1 style="display: inline-block; margin-left: 100px;"> + </h1>
+                <p style="margin-top: 1px;">Answer : Narendra Modi</p>
+
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="ques">
+                <h3 style="display: inline-block; padding-left: 4px;">Q) Who is the Prime Minister of India ?</h3>
+                <h1 style="display: inline-block; margin-left: 100px;"> + </h1>
+                <p style="margin-top: 1px;">Answer : Narendra Modi</p>
+
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="ques">
+                <h3 style="display: inline-block; padding-left: 4px;">Q) Who is the Prime Minister of India ?</h3>
+                <h1 style="display: inline-block; margin-left: 100px;"> + </h1>
+                <p style="margin-top: 1px;">Answer : Narendra Modi</p>
+
+            </div>
+        </div>
+
+        <div class="question">
+            <div class="ques">
+                <h3 style="display: inline-block; padding-left: 4px;">Q) Who is the Prime Minister of India ?</h3>
+                <h1 style="display: inline-block; margin-left: 100px;"> + </h1>
+                <p style="margin-top: 1px;">Answer : Narendra Modi</p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
